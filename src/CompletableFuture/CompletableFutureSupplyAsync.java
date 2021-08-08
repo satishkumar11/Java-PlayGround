@@ -14,7 +14,7 @@ public class CompletableFutureSupplyAsync {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                return "task is completed";
+                return "Task is completed";
             }
         }, executor).thenApply(result -> {
             return "Hello Admin, " + result;
