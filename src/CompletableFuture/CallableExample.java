@@ -10,7 +10,7 @@ public class CallableExample {
             @Override
             public String call() throws Exception {
                 System.out.println(Thread.currentThread().getName() + " executing task1");
-                Thread.sleep(5000);
+                Thread.sleep(3000);
                 return "some response";
             }
         });

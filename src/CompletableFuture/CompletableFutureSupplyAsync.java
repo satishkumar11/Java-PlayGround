@@ -1,9 +1,6 @@
 package CompletableFuture;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.function.Supplier;
 
 public class CompletableFutureSupplyAsync {
@@ -24,6 +21,6 @@ public class CompletableFutureSupplyAsync {
         });
 
         System.out.println(completableFuture.get());
-        System.out.println("done");
+        System.out.println("Program Completed");
     }
 }

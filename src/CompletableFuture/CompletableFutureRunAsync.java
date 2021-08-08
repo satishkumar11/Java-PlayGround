@@ -2,6 +2,8 @@ package CompletableFuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class CompletableFutureRunAsync {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
@@ -9,7 +11,7 @@ public class CompletableFutureRunAsync {
             @Override
             public void run() {
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -17,6 +19,6 @@ public class CompletableFutureRunAsync {
             }
         });
         completableFuture.get();
-        System.out.println("done");
+        System.out.println("Program Completed");
     }
 }
